@@ -647,8 +647,8 @@
 // CONFIG — Replace with your Supabase project details
 // Get these from: supabase.com → your project → Settings → API
 // ============================================================
-const SUPABASE_URL = 'YOUR_SUPABASE_URL';
-const SUPABASE_ANON_KEY = 'YOUR_SUPABASE_ANON_KEY';
+const SUPABASE_URL = 'https://mlbqyxpsrtztykwfagzo.supabase.co';
+const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1sYnF5eHBzcnR6dHlrd2ZhZ3pvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzUxNjM1MzcsImV4cCI6MjA5MDczOTUzN30.doQWAs6za2LjRh5vWacJryPWo24qINZRa3CaR6G5N8M';
 // ============================================================
 
 const MEMBERS = [
@@ -678,7 +678,7 @@ let checkinsData = {};
 let db = null;
 
 // Init Supabase
-if (SUPABASE_URL !== 'YOUR_SUPABASE_URL') {
+if (SUPABASE_URL !== 'https://mlbqyxpsrtztykwfagzo.supabase.co') {
   db = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
   loadAll();
 } else {
